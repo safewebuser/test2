@@ -31,7 +31,7 @@
 
     main {
       padding: 2rem;
-      max-width: 700px;
+      max-width: 800px;
       margin: 0 auto;
       background-color: #ffffffcc;
       border-radius: 12px;
@@ -40,6 +40,28 @@
 
     article {
       font-size: 1.1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      object-fit: cover;
+    }
+
+    .gallery-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #6f5b3e;
+      text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -70,6 +92,16 @@
         page brings you a sense of balance. Sometimes less is more.
       </p>
     </article>
+
+    <section class="gallery-section">
+      <div class="gallery-title">My Picture Gallery</div>
+      <div class="gallery">
+        <!-- Replace image links with your own uploads later -->
+        <img src="https://via.placeholder.com/400x300?text=Photo+1" alt="Photo 1">
+        <img src="https://via.placeholder.com/400x300?text=Photo+2" alt="Photo 2">
+        <img src="https://via.placeholder.com/400x300?text=Photo+3" alt="Photo 3">
+      </div>
+    </section>
   </main>
 </body>
 </html>
