@@ -3,116 +3,167 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AAA – Your Trusted Investment Partner</title>
+  <title>Culinary Harmony Unleashed</title>
   <style>
-    /* Background pattern from https://www.transparenttextures.com/ (coins/dollar signs) */
+    /* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
     body {
       margin: 0;
-      padding: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-image: url('https://www.transparenttextures.com/patterns/coins.png');
-      background-repeat: repeat;
-      background-color: #d8c2af; /* soft beige */
-      color: #4b4b4b;
+      font-family: 'Open Sans', sans-serif;
+      background: #fff;
+      color: #2f4f2f;
       line-height: 1.6;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem 1rem;
+      padding: 20px;
+      box-sizing: border-box;
     }
 
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    /* Header */
+    header {
+      background: #355e35;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.2rem;
+      background: white;
+      color: #355e35;
+      padding: 10px 20px;
+      border-radius: 25px;
+      user-select: none;
+    }
+
+    .contact {
+      text-align: right;
+      font-size: 0.9rem;
+      line-height: 1.3;
+      min-width: 200px;
+    }
+
+    /* Main content: two columns */
     main {
-      max-width: 1100px;
-      background-color: rgba(255, 255, 255, 0.9);
-      border-radius: 15px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-      padding: 3rem 3rem 4rem;
+      display: flex;
+      gap: 2rem;
+      padding: 2rem;
+      flex-wrap: wrap;
+    }
+
+    /* Left text column */
+    .text-col {
+      flex: 1 1 500px;
+      min-width: 280px;
     }
 
     h1 {
-      font-size: 2.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 2.1rem;
       margin-bottom: 1.5rem;
-      color: #6f5432; /* darker warm brown */
-      text-align: center;
-    }
-
-    h2 {
-      color: #7d4316; /* light brown */
-      margin-top: 2.5rem;
-      margin-bottom: 1rem;
-      font-size: 1.8rem;
-    }
-
-    h3 {
-      color: #7d4316;
-      margin-top: 1.8rem;
-      margin-bottom: 1rem;
-      font-size: 1.4rem;
+      color: #2f4f2f;
     }
 
     p {
-      margin-bottom: 1.2rem;
-      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: #3a3a3a;
     }
 
-    /* Responsive */
-    @media (max-width: 600px) {
+    /* Highlight boxes with tinted background */
+    .highlight-box {
+      background: #d8e4d8;
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #b0c5b0;
+    }
+
+    .highlight-box h2 {
+      margin-top: 0;
+      color: #355e35;
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    /* Right image column */
+    .image-col {
+      flex: 0 1 300px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .image-col img {
+      max-width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      object-fit: cover;
+      height: auto;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 720px) {
       main {
-        padding: 2rem 1.5rem 3rem;
+        flex-direction: column;
       }
 
-      h1 {
-        font-size: 2rem;
-      }
-
-      h2 {
-        font-size: 1.5rem;
-      }
-
-      h3 {
-        font-size: 1.2rem;
+      .image-col {
+        margin-top: 1.5rem;
+        justify-content: center;
       }
     }
   </style>
 </head>
 <body>
-  <main>
-    <h1>AAA – Where Your Wealth Grows and Worries Fade</h1>
+  <div class="container">
+    <header>
+      <div class="logo">YOUR LOGO</div>
+      <div class="contact">
+        Cuisine Spectrum<br />
+        Sunrise, FL 33322<br />
+        cuisine@spectrummail.com | 123.555.9877
+      </div>
+    </header>
 
-    <p>In today’s fast-moving financial world, it’s easy to feel overwhelmed. Markets shift in seconds, and uncertainty feels like the only constant. The big question? Who can you really trust with your money?</p>
+    <main>
+      <div class="text-col">
+        <h1>Culinary Harmony Unleashed: The Fusion</h1>
 
-    <p>For over 14 years, thousands of people have found their answer with AAA — a trusted investment company that turns your ambitions into real results, and your worries into confidence.</p>
+        <p>In the ever-evolving landscape of gastronomy, an exquisite evolution has taken place—fusion cuisine. This culinary phenomenon transcends traditional boundaries, creating a symphony of flavors that captivates adventurous palates worldwide.</p>
 
-    <h2>A Trusted Name in Wealth and Investment</h2>
+        <div class="highlight-box">
+          <h2>The Rise of Fusion Cuisine</h2>
+          <p>In the past decade, the culinary world has witnessed an unprecedented rise in the popularity of fusion cuisine, transforming the dining experience into a vibrant tapestry of tastes and textures. This movement goes beyond mere culinary experimentation, seamlessly blending elements from diverse cultural traditions to craft innovative and mouth-watering dishes that challenge traditional norms.</p>
+        </div>
 
-    <p>AAA isn’t just another investment platform. It’s a team, a promise, and a philosophy. Our mission is simple: we manage your wealth as if it were our own — with care, precision, and a sharp focus on growth.</p>
+        <div class="highlight-box">
+          <h2>Meet the Maestros</h2>
+          <p>Chef Monty Curtis – Umami Fusion<br />
+             Nestled in the heart of San Francisco, Umami Fusion artisan stands as a testament to the culinary artistry of Chef Monty Curtis. Monty brings a wealth of knowledge with Mediterranean influences, creating a unique and unforgettable dining experience. Signature dishes such as the “Sakura Risotto” showcase Chef Monty’s ability to weave together seemingly disparate flavors into a harmonious symphony on the palate.</p>
+        </div>
+      </div>
 
-    <p>Unlike other firms that hand you tools and leave you to navigate alone, we do things differently. Every client gets a dedicated account manager — someone who actively watches your portfolio, spots opportunities, and shields you from unnecessary risks.</p>
-
-    <p>This isn’t passive investing. This is partnership.</p>
-
-    <h2>Your Personal Expert, Always by Your Side</h2>
-
-    <p>The markets can be confusing, volatile, even scary. But with AAA, you’re never alone.</p>
-
-    <p>Your account manager is your advocate — constantly monitoring your investments, analyzing market moves, and making smart decisions to help you grow, not lose.</p>
-
-    <p>Whether you prefer the excitement of day trading or the steadiness of long-term investing, we tailor our approach to fit your goals and comfort with risk.</p>
-
-    <h2>When You Turn to AAA, Stress Is a Thing of the Past</h2>
-
-    <p>We get it — investing can be intimidating. But it doesn’t have to be.</p>
-
-    <p>With AAA, you get more than numbers and charts. You get clarity, peace of mind, and the confidence of knowing your money is in caring, experienced hands.</p>
-
-    <p>After more than a decade of refining our methods and earning trust, we’re ready to help you build your financial future.</p>
-
-    <h2>Let’s Build Your Future — Together</h2>
-
-    <p>Choosing the right investment partner can change everything. With AAA, you choose experience, dedication, and a team focused on your success.</p>
-
-    <p>Ready to take the next step? Leave the stress behind. Let AAA show you what’s possible when you have the right team on your side.</p>
-  </main>
+      <div class="image-col">
+        <img src="/mnt/data/956282c4-d07a-485a-89ac-608d7fe38d6f.png" alt="Chef Monty Curtis" />
+      </div>
+    </main>
+  </div>
 </body>
 </html>
